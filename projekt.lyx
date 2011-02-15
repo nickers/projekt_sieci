@@ -1,0 +1,116 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Cele, wymagania i założenia projektu
+\end_layout
+
+\begin_layout Section
+Cel i zakres projektu
+\end_layout
+
+\begin_layout Section
+Założenia dotyczące przepustowości sieci
+\end_layout
+
+\begin_layout Part
+Projekt logiczny sieci
+\end_layout
+
+\begin_layout Section
+Koncepcja rozwiązania i proponowane technologie
+\end_layout
+
+\begin_layout Section
+Plan adresacji sieci i wymagane protokoły
+\end_layout
+
+\begin_layout Section
+Rozmieszczenie serwerów sieciowych
+\end_layout
+
+\begin_layout Section
+Plan bezpieczeństwa sieci
+\end_layout
+
+\begin_layout Section
+Plan zarządzania siecią
+\end_layout
+
+\begin_layout Part
+Projekt fizyczny sieci
+\end_layout
+
+\begin_layout Section
+Dobór sprzętu
+\end_layout
+
+\begin_layout Subsection*
+Specyfikacja urządzeń
+\end_layout
+
+\begin_layout Section
+Proponowana fizyczna topologia sieci
+\end_layout
+
+\begin_layout Section
+Projekt okablowania strukturalnego
+\end_layout
+
+\begin_layout Subsubsection*
+Punkty dystrybucyjne
+\end_layout
+
+\begin_layout Part
+Dodatki
+\end_layout
+
+\begin_layout Section
+Harmonogram i kosztorys
+\end_layout
+
+\begin_layout Section
+Sposób przeprowadzenia testów sieci 
+\end_layout
+
+\end_body
+\end_document
