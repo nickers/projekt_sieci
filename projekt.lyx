@@ -36,6 +36,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -46,6 +47,34 @@ Cele, wymagania i założenia projektu
 
 \begin_layout Section
 Cel i zakres projektu
+\end_layout
+
+\begin_layout Subsection
+Cel projektu
+\end_layout
+
+\begin_layout Standard
+Celem projektu jest sieć komputerowa obejmująca swoim zasięgiem 3
+\begin_inset space ~
+\end_inset
+
+oddziały miejskie pewnej firmy, zapewniająca komunikację w
+\begin_inset space ~
+\end_inset
+
+ramach całej siedziby głównej, łącznać z
+\begin_inset space ~
+\end_inset
+
+siecią WAN oraz z
+\begin_inset space ~
+\end_inset
+
+2 oddziałami terenowymi.
+\end_layout
+
+\begin_layout Subsection
+Zakres projektu
 \end_layout
 
 \begin_layout Section
