@@ -2,9 +2,14 @@
 \lyxformat 345
 \begin_document
 \begin_header
-\textclass article
+\textclass book
 \use_default_options true
-\language english
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\language polish
 \inputencoding auto
 \font_roman default
 \font_sans default
@@ -17,21 +22,22 @@
 
 \graphics default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \cite_engine basic
 \use_bibtopic false
 \paperorientation portrait
-\secnumdepth 3
-\tocdepth 3
+\secnumdepth 2
+\tocdepth 2
 \paragraph_separation indent
 \defskip medskip
-\quotes_language english
+\quotes_language german
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -41,7 +47,21 @@
 
 \begin_body
 
-\begin_layout Part
+\begin_layout Title
+Projektowanie i Zarządzanie Sieciami Komputerowymi, 
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+projekt zaliczeniowy A:
+\end_layout
+
+\begin_layout Author
+Dariusz Filipiak 80051, Tomasz Wsuł 80169
+\end_layout
+
+\begin_layout Chapter
 Cele, wymagania i założenia projektu
 \end_layout
 
@@ -77,11 +97,169 @@ siecią WAN oraz z
 Zakres projektu
 \end_layout
 
+\begin_layout Standard
+Wszystkie oddziały miejskie firmy zamierzają korzystać z jednej rozproszonej
+ bazy danych, którą będą tworzyć trzy serwery IBM 800 zSeries; dostęp do
+ tej bazy danych realizowany będzie głównie przez stacje robocze (
+\series bold
+SR
+\series default
+).
+ Dodatkowo w każdym budynku znajdować się będą serwery plików (
+\series bold
+SP
+\series default
+) oraz Lotus Domino (
+\series bold
+SD
+\series default
+), do których dostęp mają mieć wszyscy użytkownicy oddziałów miejskich.
+\end_layout
+
+\begin_layout Standard
+Siedziba główna ma być połączona z dwoma 
+\series bold
+oddziałami terenowymi
+\series default
+ na obszarze kraju siecią 
+\series bold
+WAN
+\series default
+; oddziały terenowe również będą korzystać z rozproszonej bazy danych w
+ siedzibie głównej – dostęp będzie realizowany przez stacje robocze (
+\series bold
+SR
+\series default
+).
+ W połączeniach oddziałów terenowych z siedzibą główną należy uwzględnić
+ dodatkowe łącza awaryjne.
+ 
+\end_layout
+
+\begin_layout Standard
+Siedzibę główną tworzą trzy budynki z następującym wyposażeniem: 
+\end_layout
+
+\begin_layout Itemize
+budynek 
+\series bold
+B1
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+serwer IBM 800 zSeries, 
+\end_layout
+
+\begin_layout Itemize
+200 stacji roboczych (
+\series bold
+SR
+\series default
+), 
+\end_layout
+
+\begin_layout Itemize
+2 serwery plików (
+\series bold
+SP
+\series default
+), 
+\end_layout
+
+\begin_layout Itemize
+1 serwer Lotus Domino (
+\series bold
+SD
+\series default
+); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+budynek 
+\series bold
+B2
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+serwer IBM 800 zSeries, 
+\end_layout
+
+\begin_layout Itemize
+100 stacji roboczych (
+\series bold
+SR
+\series default
+),
+\end_layout
+
+\begin_layout Itemize
+1 serwer plików (
+\series bold
+SP
+\series default
+),
+\end_layout
+
+\begin_layout Itemize
+1 serwer Lotus Domino (
+\series bold
+SD
+\series default
+); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+budynek 
+\series bold
+B3
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+serwer IBM 800 zSeries, 
+\end_layout
+
+\begin_layout Itemize
+100 stacji roboczych (
+\series bold
+SR
+\series default
+), 
+\end_layout
+
+\begin_layout Itemize
+1 serwer plików (
+\series bold
+SP
+\series default
+), 
+\end_layout
+
+\begin_layout Itemize
+1 serwer Lotus Domino (
+\series bold
+SD
+\series default
+).
+ 
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Założenia dotyczące przepustowości sieci
 \end_layout
 
-\begin_layout Part
+\begin_layout Chapter
 Projekt logiczny sieci
 \end_layout
 
@@ -105,7 +283,7 @@ Plan bezpieczeństwa sieci
 Plan zarządzania siecią
 \end_layout
 
-\begin_layout Part
+\begin_layout Chapter
 Projekt fizyczny sieci
 \end_layout
 
@@ -129,7 +307,7 @@ Projekt okablowania strukturalnego
 Punkty dystrybucyjne
 \end_layout
 
-\begin_layout Part
+\begin_layout Chapter
 Dodatki
 \end_layout
 
