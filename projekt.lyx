@@ -332,20 +332,20 @@ Dla każdego budynku planowany jest jeden główny punkt dystrybucyjny (MDF),
 
 \begin_layout Standard
 Okablowanie pionowe zostanie zrealizowane w technologii światłowodowej z
- wykorzystaniem 6--włóknowego kabla wewnętrznego 62,5/125 w tubie ścisłej.
- Dla okablowania poziomego planowane jest wykorzystanie kabla UTP kat.
- 6.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-jakieś konkretne modele wymienić??
+ wykorzystaniem 6--włóknowego kabla W-Yn0TKSd wewnętrznego wielomodowego
+ (G/62,5) w tubie ścisłej o przekroju (0,9 mm) wzmocnionej włóknem aramidowym
+ w powłoce nierozprzestrzeniającej płomienia.
+ Kabel spełnia normę ZN-TF-12:2001.
 \end_layout
 
-\end_inset
-
-Wykorzystanie kabla kat.
+\begin_layout Standard
+Dla okablowania poziomego planowane jest wykorzystanie kabla UTP drut 4x2x0.5mm
+ kat.
+ 6 Cu A-LAN.
+ Kabel spełnia wymagania kategorii 6 zgodnie z ISO/IEC 11801; EN 50173;
+ IEC 61156-5 oraz EN 50288-4-1.
+ Próba palności według IEC 60332-1 (HD 405-1).
+ Wykorzystanie kabla kat.
  6 umożliwi w przyszłości zwiększenie przepustowości łącz do 1Gb.
 \end_layout
 
@@ -359,6 +359,19 @@ Dodatki
 
 \begin_layout Section
 Harmonogram i kosztorys
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+kabel UTP - 1,40zł/mb
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
