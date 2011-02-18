@@ -310,7 +310,40 @@ Dobór sprzętu
 \end_layout
 
 \begin_layout Subsection*
-Specyfikacja urządzeń
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Co będzie potrzeba:
+\end_layout
+
+\begin_layout Plain Layout
+- szafy rakowe do MDF + na każdy IDF
+\end_layout
+
+\begin_layout Plain Layout
+- 2 x AP na parter do B2 i B3
+\end_layout
+
+\begin_layout Plain Layout
+- 3xIBM zSeries
+\end_layout
+
+\begin_layout Plain Layout
+- panele krosowe
+\end_layout
+
+\begin_layout Plain Layout
+- switche do MDF + IDF (światłowód !!!)
+\end_layout
+
+\begin_layout Plain Layout
+- jakies routery do MDF ???
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -349,8 +382,80 @@ Dla okablowania poziomego planowane jest wykorzystanie kabla UTP drut 4x2x0.5mm
  6 umożliwi w przyszłości zwiększenie przepustowości łącz do 1Gb.
 \end_layout
 
+\begin_layout Standard
+Okablowanie poziome zostanie poprowadzone natynkowo w niepalnych korytkach
+ kablowych PCV.
+ W korytkach zostaną zamontowane gniazda przy każdym stanowisku roboczym.
+ Poprowadzenie okablowania w korytkach pozwoli na łatwiejsze dokonywanie
+ potnecjalnych napraw i/lub modyfikacji w już zainstalowanym okablowaniu.
+ 
+\end_layout
+
+\begin_layout Standard
+Podczas instalowania okablowania poziomego zostaną przyjęte następujące
+ wymagania odnośnie długości:
+\end_layout
+
+\begin_layout Itemize
+IDF -- gniazdo abonenckie -- max 90m,
+\end_layout
+
+\begin_layout Itemize
+kabel przyłączeniowy -- max 3m,
+\end_layout
+
+\begin_layout Itemize
+kabel krosowy + kabel przyłączeniowy -- max 10m,
+\end_layout
+
+\begin_layout Standard
+czego efektem będzie maksymalna długość okablowania poziomego nie przekraczająca
+ 100m.
+\end_layout
+
 \begin_layout Section
 Projekt okablowania strukturalnego
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+tutaj to chyba tylko rysunek z ogólną legendą
+\end_layout
+
+\begin_layout Plain Layout
+coś na zasadzie
+\end_layout
+
+\begin_layout Plain Layout
+IDF---------------SR ----------------SR
+\end_layout
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\begin_layout Plain Layout
+IDF-------------------SR-------------SR
+\end_layout
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\begin_layout Plain Layout
+MDF
+\end_layout
+
+\begin_layout Plain Layout
+i oznaczenie poszczególnych kabli
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -366,7 +471,16 @@ Harmonogram i kosztorys
 status open
 
 \begin_layout Plain Layout
+światłowód 6327zł/km
+\end_layout
+
+\begin_layout Plain Layout
 kabel UTP - 1,40zł/mb
+\end_layout
+
+\begin_layout Plain Layout
+http://www.baspol.comweb.pl/content.php?str=produkty#korytka-kablowe - korytka
+ kablowe ceny
 \end_layout
 
 \end_inset
@@ -375,7 +489,80 @@ kabel UTP - 1,40zł/mb
 \end_layout
 
 \begin_layout Section
-Sposób przeprowadzenia testów sieci 
+Sposób przeprowadzenia testów sieci
+\end_layout
+
+\begin_layout Subsection
+Testowanie okablowania poziomego
+\end_layout
+
+\begin_layout Standard
+Dla okablowania poziomego zweryfikowane zostanie poprawne połączenie wszystkich
+ żył pomiędzy gniazdem abonenckim, a lokalnym punktem dostępowym.
+ Zweryfikowane zostaną także przesłuchy pomiędzy kablami oraz wpływ otoczenia
+ na transmisję.
+ Zweryfikowana zostanie przepustowość poszczególnych kabli.
+\end_layout
+
+\begin_layout Subsection
+Testowanie okablowania pionowego
+\end_layout
+
+\begin_layout Standard
+Na okablowaniu pionowym (światłowód) zostanie przeprowadzony pomiar reflektometr
+zyczny mający stwierdzić brak powstałych podczas instalacji uszkodzeń oraz
+ poprawne ułożenie okablowania.
+\end_layout
+
+\begin_layout Subsection
+Testowanie wydajnościowe
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+w sumie mam na myśli jakieś całościowe -- nie wiem jak i czy idzie coś takiego
+ zrobić
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Testowanie bezpieczeństwa
+\end_layout
+
+\begin_layout Standard
+Po wykonaniu oraz uruchomieniu sieci w czasie normalnej pracy planowane
+ jest zlecenie testów penetracyjnych mających na celu wskazanie luk w bezpieczeń
+stwie i ich korekcję.
+ Testy powinny zostać zlecone i wykonane natychmiast po zakończeniu prac
+ instalacyjnych oraz konfiguracyjnych.
+\end_layout
+
+\begin_layout Section
+Specyfikacje
+\end_layout
+
+\begin_layout Standard
+Specyfikacje okablowania i sprzętu wykorzystanego w projekcie.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+http://www.tfkable.pl/data/katalogi/tfk_telekom_2006.pdf -- strona 83 i 84
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
