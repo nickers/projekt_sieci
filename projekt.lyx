@@ -309,6 +309,91 @@ Projekt fizyczny sieci
 Dobór sprzętu
 \end_layout
 
+\begin_layout Subsection
+Szafy rakowe
+\end_layout
+
+\begin_layout Standard
+Sprzęt sieciowy zostanie zainstalowany w szafach rakowych.
+ Szafa taka zostanie umieszczona w każdym głównym punkcie dostępowym oraz
+ w każdym lokalnym punkcie dostępowym.
+ Celem zabezpieczenia osprzetu przed warunkami wewnętrznymi planuje się
+ zamontowanie szaf zamkniętych zapewniających lepszą izolację przed zanieczyszcz
+eniami.
+ Dla MDF planowane są szafy o rozmiarach ??U, natomiast szafy w IDF o rozmiarze
+ ??U.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ile tam tych U -- bo ta będzie większa, tylko trzeba oszacować co tam trzeba
+ wstawić, jak będziemy wiedzieć jak jest na poszczególnych piętrach itp
+ komputerów, ile pięter.
+\end_layout
+
+\begin_layout Plain Layout
+http://speckable.pl/?action=shop&tw_id=1604&kod=T232%2F600X800 -- tutaj są
+ jakieś szafy
+\end_layout
+
+\begin_layout Plain Layout
+TODO: wybrać coś w stosownym rozmiarze, dodać do cennika odpowiednią ilość
+ i ewentualnie informacje do specyfikacji
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Panele krosowe
+\end_layout
+
+\begin_layout Standard
+W lokalnych punktach dystrybucyjnych wymagane jest zamonotwanie odpowiedniej
+ liczby paneli krosowych oraz paneli z wieszakami na każde przypadające
+ 48 portów w panelach krosowych.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: nie wiem ile bedzie punktów dostepowych na kazdym pietrze 3xstanowisko
+ + odpowiednio wieszaki
+\end_layout
+
+\begin_layout Plain Layout
+TODO: wstawić w cennik
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+IBM 800 zSERIES
+\end_layout
+
+\begin_layout Subsection
+WiFi AP
+\end_layout
+
+\begin_layout Subsection
+Switche
+\end_layout
+
+\begin_layout Subsection
+Rozmieszczenie elementów w szafie
+\end_layout
+
 \begin_layout Subsection*
 \begin_inset Note Note
 status open
@@ -368,7 +453,14 @@ Okablowanie pionowe zostanie zrealizowane w technologii światłowodowej z
  wykorzystaniem 6--włóknowego kabla W-Yn0TKSd wewnętrznego wielomodowego
  (G/62,5) w tubie ścisłej o przekroju (0,9 mm) wzmocnionej włóknem aramidowym
  w powłoce nierozprzestrzeniającej płomienia.
- Kabel spełnia normę ZN-TF-12:2001.
+ Kabel spełnia normę ZN-TF-12:2001 (informacje szczegółowe 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:Specyfikacje"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -546,6 +638,13 @@ stwie i ich korekcję.
 
 \begin_layout Section
 Specyfikacje
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Specyfikacje"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
