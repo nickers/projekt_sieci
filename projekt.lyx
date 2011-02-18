@@ -98,9 +98,13 @@ Zakres projektu
 \end_layout
 
 \begin_layout Standard
-Wszystkie oddziały miejskie firmy zamierzają korzystać z jednej rozproszonej
- bazy danych, którą będą tworzyć trzy serwery IBM 800 zSeries; dostęp do
- tej bazy danych realizowany będzie głównie przez stacje robocze (
+Wszystkie oddziały miejskie firmy zamierzają korzystać z
+\begin_inset space ~
+\end_inset
+
+jednej rozproszonej bazy danych, którą będą tworzyć trzy serwery IBM 800
+ zSeries; dostęp do tej bazy danych realizowany będzie głównie przez stacje
+ robocze (
 \series bold
 SR
 \series default
@@ -109,11 +113,17 @@ SR
 \series bold
 SP
 \series default
-) oraz Lotus Domino (
+) oraz Microsoft Dynamics (
 \series bold
 SD
 \series default
 ), do których dostęp mają mieć wszyscy użytkownicy oddziałów miejskich.
+ W głównej siedzibie będzie dodatkowo zainstalowane oprogramowanie finansowo--ks
+ięgowe enova(
+\series bold
+SE
+\series default
+).
 \end_layout
 
 \begin_layout Standard
@@ -170,11 +180,19 @@ SP
 \end_layout
 
 \begin_layout Itemize
-1 serwer Lotus Domino (
+1 serwer Microsoft Dynamics (
 \series bold
 SD
 \series default
-); 
+)
+\end_layout
+
+\begin_layout Itemize
+1 serwer Enova (
+\series bold
+S
+\series default
+E); 
 \end_layout
 
 \end_deeper
@@ -208,7 +226,7 @@ SP
 \end_layout
 
 \begin_layout Itemize
-1 serwer Lotus Domino (
+1 serwer Microsoft Dynamics (
 \series bold
 SD
 \series default
@@ -246,7 +264,7 @@ SP
 \end_layout
 
 \begin_layout Itemize
-1 serwer Lotus Domino (
+1 serwer Microsoft Dynamics (
 \series bold
 SD
 \series default
@@ -299,12 +317,40 @@ Specyfikacja urządzeń
 Proponowana fizyczna topologia sieci
 \end_layout
 
-\begin_layout Section
-Projekt okablowania strukturalnego
+\begin_layout Standard
+Dla każdego budynku planowany jest jeden główny punkt dystrybucyjny (MDF),
+ skąd będzie prowadzone odpowiednie okablowanie do punktów dystrybucyjnych
+ na poszczególnych piętrach(IDF).
+ Z punktów dystrybucyjnych na poszczególnych piętrach będzie prowadzone
+ okablowanie poziome do poszczególnych stacji roboczych.
+ Ze względu na wymagane wykorzystanie technologii VoIP planowane jest położenie
+ 3 przewodów przypadających na każde stanowisko robocze.
+ Pomiędzy oddziałami oraz filiami nie jest planowane instalowanie okablowania,
+ lecz dzierżawienie odpowiednich łączy od zewnętrznych operatorów.
+ 
 \end_layout
 
-\begin_layout Subsubsection*
-Punkty dystrybucyjne
+\begin_layout Standard
+Okablowanie pionowe zostanie zrealizowane w technologii światłowodowej z
+ wykorzystaniem 6--włóknowego kabla wewnętrznego 62,5/125 w tubie ścisłej.
+ Dla okablowania poziomego planowane jest wykorzystanie kabla UTP kat.
+ 6.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+jakieś konkretne modele wymienić??
+\end_layout
+
+\end_inset
+
+Wykorzystanie kabla kat.
+ 6 umożliwi w przyszłości zwiększenie przepustowości łącz do 1Gb.
+\end_layout
+
+\begin_layout Section
+Projekt okablowania strukturalnego
 \end_layout
 
 \begin_layout Chapter
