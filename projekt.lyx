@@ -1,5 +1,5 @@
-#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0.0beta4 created this file. For more info see http://www.lyx.org/
+\lyxformat 412
 \begin_document
 \begin_header
 \textclass book
@@ -9,18 +9,26 @@ theorems-ams
 eqs-within-sections
 figs-within-sections
 \end_modules
+\maintain_unincluded_children false
 \language polish
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -28,21 +36,30 @@ figs-within-sections
 \use_geometry true
 \use_amsmath 1
 \use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Indeks
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 2
 \tocdepth 2
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language german
 \papercolumns 1
 \papersides 2
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -273,12 +290,51 @@ SD
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+Dodatkowo na parterze każdego budynku (oraz w całym budynku B1) siedziby
+ głównej należy zapewnić bezprzewodowy dostęp do sieci lokalnej oraz dodatkowo
+ w całej sieci należy uwzględnić możliwość wykorzystania telefonii Voice-Over-IP
+\end_layout
+
 \begin_layout Section
 Założenia dotyczące przepustowości sieci
 \end_layout
 
 \begin_layout Chapter
 Projekt logiczny sieci
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+Schemat budynku:
+\end_layout
+
+\begin_layout Plain Layout
+ten największy:
+\end_layout
+
+\begin_layout Plain Layout
+4 pietra x 5 pokoi x 10 stanowisk
+\end_layout
+
+\begin_layout Plain Layout
+50 punktow na pietro
+\end_layout
+
+\begin_layout Plain Layout
+te mniejsze:
+\end_layout
+
+\begin_layout Plain Layout
+2 pietra x 5 pokoi x 10 stanowisk
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -289,16 +345,88 @@ Koncepcja rozwiązania i proponowane technologie
 Plan adresacji sieci i wymagane protokoły
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+podzielić sieć /8 na:
+\end_layout
+
+\begin_layout Plain Layout
+2 podsieci dla oddział terenowy
+\end_layout
+
+\begin_layout Plain Layout
+8 podsieci na piętro i tak mamy 3x50 punktów na pietro = 150punktow
+\end_layout
+
+\begin_layout Plain Layout
+3 podsieć na MDF - IBM zSERIES + inne potencjalne serwery
+\end_layout
+
+\begin_layout Plain Layout
+3 podsieci na WiFi w każdym budynku
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Rozmieszczenie serwerów sieciowych
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+w MDFach
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Plan bezpieczeństwa sieci
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+WPA2 dla sieci bezprzewodowej, VPN dla całości sieci, dobór firewalla, wydzielen
+ie WiFi z dostępu do zasobów sieci -- tylko dostęp do netu, RADIUS dla sieciowyc
+h elementów
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Plan zarządzania siecią
+\end_layout
+
+\begin_layout Standard
+Zarządzanie siecią planuje się oprzeć na protokole SNMP.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+No i Triglav :)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -361,16 +489,55 @@ W lokalnych punktach dystrybucyjnych wymagane jest zamonotwanie odpowiedniej
 \end_layout
 
 \begin_layout Standard
+Na każdym piętrze przypada 50 stanowisk roboczych, dla każdego stanowiska
+ należy uwzględnić 3 podłączenia przewodów UTP.
+ Dodatkowo należy zapewnić miejsce na podłączenie AP dla sieci bezprzewodowych
+ oraz w głównym punkcie dystrybucyjnym możliwość podłączenia serwera IBM
+ 800 zSERIES i potencjalnie innych serwerów.
+ Na każde piętro należy więc przygotować, aby zachować rezerwę 170 miejsc
+ w panelach krosowych.
+\end_layout
+
+\begin_layout Standard
+Do instalacji został wybrany panel krosowy MOLEX PID-00141-EU oraz PID-00142-EU.
+ Jest to panel zapewniający godność z normami TIA/EIA-568-B.2-1, FCB.
+ Zapewnia zgodność z normami kategorii 6, więc może być wykorzystany do
+ budowy kanałów Gigabit Ethernet.
+ Panel posiadający 24 styki RJ45, zajmuje w szafie 1U miejsca, panel z 48
+ stykami 2U miejsca.
+\end_layout
+
+\begin_layout Standard
+W każdej szafie zostaną zainstalowane 3 panele PID-00142-EU (48 styków)
+ oraz 1 panel PID-00141-EU (24 styki) oraz 4 organizatory do kabli.
+ Panele zajmą w szafie 7U miejsca, oragnizatory 4U.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-TODO: nie wiem ile bedzie punktów dostepowych na kazdym pietrze 3xstanowisko
- + odpowiednio wieszaki
+panel krosowy światłowodowy??
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+W MDF wystarczy 1 panel krosowy 24 portowy oraz 1 organizator kabli.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Plain Layout
-TODO: wstawić w cennik
+także panel krosowy światłowodowy
 \end_layout
 
 \end_inset
@@ -382,12 +549,90 @@ TODO: wstawić w cennik
 IBM 800 zSERIES
 \end_layout
 
+\begin_layout Standard
+Jako mainframe został wybrany IBM 800 zSERIES
+\end_layout
+
 \begin_layout Subsection
 WiFi AP
 \end_layout
 
+\begin_layout Standard
+Celem zapewnienia dostępu do sieci wymagane będzie zainstalowanie punktów
+ dostępowych dla sieci bezprzewodowej.
+ Planuje się instalację 2 punktów na każdym piętrze gdzie wymagany jest
+ dostęp do sieci.
+ Punk dostępowy to Cisco AIR-LAP1141N-E-K9
+\end_layout
+
 \begin_layout Subsection
 Switche
+\end_layout
+
+\begin_layout Standard
+Zakładając, że dodatkowa karta sieciowa będzie podłączona w max 50% maszyn
+ oraz max 50% stanowisk będzie posiadało telefon VoIP 96 portów w przełącznikach
+ switch jest liczbą wystarczającą.
+ Wybrano switch 48 portowy 3Com 3CR17334-91 z 4 portami SFP.
+ Wspiera on wiele standardów w tym zarządzanie i monitoring z wykorzystaniem
+ SNMP oraz RMON.
+ Bezpieczeństwo jest zapewniane ze wsparciem standardów 802.1X oraz RADIUS.
+ Dodatkowo posiada możliwość nadawania priorytetów ruchowi oraz kontroli
+ i zarządzania przepływem danych.
+ Switch ma pojemność 17,6 Gbps oraz szybkość przekazywania 13,1 Mpps.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+to sie tak tłumaczy???
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+-- nie ma chyba serwera DHCP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+W porty SFP będą wpięte moduły SFP 550m 850nm (S-SX) zapewniające transmisję
+ 1000Mbps.
+ Transmisja tej wielkości zapewni wysoką wydajność oraz niskie opóźnienia
+ w komunikacji w rdzeniu sieci.
+\end_layout
+
+\begin_layout Standard
+Switch zajmuje 1U miejsca w szafie rakowej.
+ W szafie IDF będzie to 2U miejsca.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+http://www.fcnet.pl/Modul_SFP_550m_850nm_S_SX-24.html
+\end_layout
+
+\begin_layout Plain Layout
+MDF: switch światłowodowy z modułem ethernetowym + switch ethernetowy
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -580,6 +825,517 @@ http://www.baspol.comweb.pl/content.php?str=produkty#korytka-kablowe - korytka
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Identyfikator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nazwa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cena
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sztuk
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Razem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PID-00141-EU
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Panel krosowy MOLEX 24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+562,76
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 na IDF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PID-00142-EU
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Panel krosowy MOLEX 48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+961,57
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 na IDF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3CR17334-91
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Switch 48 port + SFP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 063,45 zł
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 na IDF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S-SX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Moduł SFP do switcha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+93,04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/2 na IDF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cisco AIR-LAP1141N-E-K9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Punkt dostępowy WiFi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1556.60zł
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Zestawienie cen.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Sposób przeprowadzenia testów sieci
 \end_layout
@@ -657,6 +1413,21 @@ status open
 
 \begin_layout Plain Layout
 http://www.tfkable.pl/data/katalogi/tfk_telekom_2006.pdf -- strona 83 i 84
+ (światłowód)
+\end_layout
+
+\begin_layout Plain Layout
+http://static.veracomp.pl/files/file_2979_0_u400.pdf -- panel krosowy
+\end_layout
+
+\begin_layout Plain Layout
+http://www.3com.com/products/en_US/detail.jsp?tab=prodspec&sku=3CR17334-91&pathtype
+=purchase -- switch
+\end_layout
+
+\begin_layout Plain Layout
+http://www.cisco.com/en/US/prod/collateral/wireless/ps5678/ps10092/datasheet_c78-5
+02793.pdf -- punkt dostępowy WiFi
 \end_layout
 
 \end_inset
