@@ -528,17 +528,13 @@ Razem
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-\begin_layout Chapter
-Projekt logiczny sieci
+\begin_layout Section
+Schematy budynków
 \end_layout
 
 \begin_layout Standard
@@ -550,7 +546,7 @@ Wsystkie trzy budynki B1, B2 i B3 zbudowane są na tym samym planie a posiadają
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -577,13 +573,55 @@ Plan parteru
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename plany_budynku/plan_budynku-p2.pdf
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Plan piętra
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Na każdym piętrze jest 40 stanowisko pracy oraz 1 pokój przeznaczony na
+ infrastrukturę sieciową.
+ 
+\end_layout
+
+\begin_layout Chapter
+Projekt logiczny sieci
 \end_layout
 
 \begin_layout Standard
@@ -616,11 +654,36 @@ Koncepcja rozwiązania i proponowane technologie
 \end_layout
 
 \begin_layout Standard
+Połączenia między budynkami siedziby głównej będą zrealizowane poprzez dzierżawę
+ pary nitek światłowodów jednomodowych między każdą parą budynków - łącznie
+ 3 par o łącznej długości 12km.
+ Na końcach linii zostaną zainstalowane urządzenia aktywne o
+\begin_inset space ~
+\end_inset
+
+przepustowości 1
+\begin_inset space ~
+\end_inset
+
+Gbit/s.
+ Połączenie każdy-z-każdym pozwoli optymalnie planować trasy między oddziałami
+ zapewniając jednocześnie redundancję na wypadek awarii jednego z łączy.
+ Sieci budynków będą połączone ze światłowodami przez 
+\series bold
+panel światłowodowy do routera z portami SFZ? wyposażonymi w konwertery
+ optyczno-elektryczne.
+\end_layout
+
+\begin_layout Standard
+Dokumentacja dzierżawionych łączy zostanie dostarczona przez właściciela.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-przepisac
+poprawić na prawdziwe :)
 \end_layout
 
 \end_inset
