@@ -265,7 +265,7 @@ serwer IBM 800 zSeries,
 \end_layout
 
 \begin_layout Itemize
-100 stacji roboczych (
+120 stacji roboczych (
 \series bold
 SR
 \series default
@@ -317,19 +317,11 @@ ten największy:
 \end_layout
 
 \begin_layout Plain Layout
-5 pietra x 50 stanowisk
+5 pieter po 40
 \end_layout
 
 \begin_layout Plain Layout
-50 punktow na pietro
-\end_layout
-
-\begin_layout Plain Layout
-te mniejsze:
-\end_layout
-
-\begin_layout Plain Layout
-2 pietra x 5 pokoi x 10 stanowisk
+mniejsze 3 pietra po 40
 \end_layout
 
 \end_inset
@@ -339,6 +331,19 @@ te mniejsze:
 
 \begin_layout Section
 Koncepcja rozwiązania i proponowane technologie
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+przepisac
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -354,19 +359,7 @@ podzielić sieć /8 na:
 \end_layout
 
 \begin_layout Plain Layout
-2 podsieci dla oddział terenowy
-\end_layout
-
-\begin_layout Plain Layout
-8 podsieci na piętro i tak mamy 3x50 punktów na pietro = 150punktow
-\end_layout
-
-\begin_layout Plain Layout
-3 podsieć na MDF - IBM zSERIES + inne potencjalne serwery
-\end_layout
-
-\begin_layout Plain Layout
-3 podsieci na WiFi w każdym budynku
+10.NRBUD.NRPIETR.KOMP
 \end_layout
 
 \end_inset
@@ -402,12 +395,20 @@ status open
 \begin_layout Plain Layout
 WPA2 dla sieci bezprzewodowej, VPN dla całości sieci, dobór firewalla, wydzielen
 ie WiFi z dostępu do zasobów sieci -- tylko dostęp do netu, RADIUS dla sieciowyc
-h elementów
+h elementów, adresy na stałe w DHCP
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Celem zapewnienia bezpieczeństwa sieci planuje się utworzenie sieci VPN
+ pomiędzy oddziałami miejskimi oraz oddziałami zamiejskimi.
+ Zapewni to wysoki stopień przezroszystości, łatwość komunikacji oraz wysoki
+ poziom bezpieczeństwa transmisji.
+ 
 \end_layout
 
 \begin_layout Section
@@ -422,6 +423,14 @@ status open
 
 \begin_layout Plain Layout
 No i Triglav :)
+\end_layout
+
+\begin_layout Plain Layout
+lokalizacja opisana z adresem
+\end_layout
+
+\begin_layout Plain Layout
+stałe adresy IP dla MAC
 \end_layout
 
 \end_inset
@@ -561,10 +570,7 @@ Switche
 \end_layout
 
 \begin_layout Standard
-Zakładając, że dodatkowa karta sieciowa będzie podłączona w max 50% maszyn
- oraz max 50% stanowisk będzie posiadało telefon VoIP 96 portów w przełącznikach
- switch jest liczbą wystarczającą.
- Wybrano switch 48 portowy 3Com 3CR17334-91 z 4 portami SFP.
+Wybrano switch 48 portowy 3Com 3CR17334-91 z 4 portami SFP.
  Wspiera on wiele standardów w tym zarządzanie i monitoring z wykorzystaniem
  SNMP oraz RMON.
  Bezpieczeństwo jest zapewniane ze wsparciem standardów 802.1X oraz RADIUS.
@@ -678,7 +684,7 @@ Dla każdego budynku planowany jest jeden główny punkt dystrybucyjny (MDF),
  Z punktów dystrybucyjnych na poszczególnych piętrach będzie prowadzone
  okablowanie poziome do poszczególnych stacji roboczych.
  Ze względu na wymagane wykorzystanie technologii VoIP planowane jest położenie
- 3 przewodów przypadających na każde stanowisko robocze.
+ 2 przewodów przypadających na każde stanowisko robocze.
  Pomiędzy oddziałami oraz filiami nie jest planowane instalowanie okablowania,
  lecz dzierżawienie odpowiednich łączy od zewnętrznych operatorów.
  
@@ -789,10 +795,6 @@ Harmonogram i kosztorys
 \begin_layout Standard
 \begin_inset Note Note
 status open
-
-\begin_layout Plain Layout
-światłowód 6327zł/km
-\end_layout
 
 \begin_layout Plain Layout
 kabel UTP - 1,40zł/mb
