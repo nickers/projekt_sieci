@@ -300,8 +300,290 @@ Dodatkowo na parterze każdego budynku (oraz w całym budynku B1) siedziby
 Założenia dotyczące przepustowości sieci
 \end_layout
 
+\begin_layout Standard
+Dla komfortowej pracy z
+\begin_inset space ~
+\end_inset
+
+Microsoft Dynamic zakłada się wymagane pasmo minimum 50
+\begin_inset space ~
+\end_inset
+
+KB/s na użytkownika --- 2
+\begin_inset space ~
+\end_inset
+
+MB/s na każde piętro, 10
+\begin_inset space ~
+\end_inset
+
+MB dla budynku B1, 6
+\begin_inset space ~
+\end_inset
+
+MB dla pozostałych budynków.
+\end_layout
+
+\begin_layout Standard
+Do pracy ze stronami WWW oraz używania poczty elektronicznej zakłada się,
+ że maksymalnie 50% pracowników jednocześnie przegląda sieć web a
+\begin_inset space ~
+\end_inset
+
+do całkowicie płynnej pracy wymagane jest 1
+\begin_inset space ~
+\end_inset
+
+Mb/s czyli sumarycznie dla budynku B1 potrzebne jest łącze 100
+\begin_inset space ~
+\end_inset
+
+Mb/s, dla B2 i B3 po 60
+\begin_inset space ~
+\end_inset
+
+Mb/s.
+\end_layout
+
+\begin_layout Standard
+Dla połączeń VoIP zakłada się kodowanie G.711a, czyli na każde połączenie
+ potrzebne jest 80
+\begin_inset space ~
+\end_inset
+
+Kbit/s co nawet zakładanym maksymalnym chwilowym obciążeniu 200 rozmów jednocześ
+nie daje 16
+\begin_inset space ~
+\end_inset
+
+Mbit/s (maksymalnie 40 osób na piętrze --- 3,2
+\begin_inset space ~
+\end_inset
+
+Mbit/s).
+ Przy założeniu 80% rozmów wychodzących poza budynki siedziby głównej potrzebne
+ jest pasmo 12,8
+\begin_inset space ~
+\end_inset
+
+Mbit/s.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle" tabularwidth="100text%">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+LP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nazwa obciążenia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Wartość obciążenia w Mbit/s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WWW, poczta elektroniczna
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VoIP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,064 (0,08*80%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Razem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1,064
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Średnie obciążenie z jednego stanowiska na zewnątrz sieci firmowej
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Projekt logiczny sieci
+\end_layout
+
+\begin_layout Standard
+Wsystkie trzy budynki B1, B2 i B3 zbudowane są na tym samym planie a posiadają
+ różną liczbę pięter, odpowiednio 5 pięter, 3 piętra i 3 piętra.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plany_budynku/plan_budynku-p1.pdf
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Plan parteru
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
