@@ -177,7 +177,7 @@ B1
 
 \begin_deeper
 \begin_layout Itemize
-serwer IBM 800 zSeries, 
+serwer IBM System z10 BC, 
 \end_layout
 
 \begin_layout Itemize
@@ -223,7 +223,7 @@ B2
 
 \begin_deeper
 \begin_layout Itemize
-serwer IBM 800 zSeries, 
+serwer IBM System z10 BC, 
 \end_layout
 
 \begin_layout Itemize
@@ -261,7 +261,7 @@ B3
 
 \begin_deeper
 \begin_layout Itemize
-serwer IBM 800 zSeries, 
+serwer IBM System z10 BC,
 \end_layout
 
 \begin_layout Itemize
@@ -863,7 +863,7 @@ Na każdym piętrze przypada 40 stanowisk roboczych, dla każdego stanowiska
  należy uwzględnić 2 podłączenia przewodów UTP.
  Dodatkowo należy zapewnić miejsce na podłączenie AP dla sieci bezprzewodowych
  oraz w głównym punkcie dystrybucyjnym możliwość podłączenia serwera IBM
- 800 zSERIES i potencjalnie innych serwerów.
+ System z10 i potencjalnie innych serwerów.
  Na każde piętro należy więc przygotować, aby zachować rezerwę 81 miejsc
  w panelach krosowych.
 \end_layout
@@ -905,21 +905,17 @@ Panele i switch będą połączone kablami krosowymi UTP kat 6.
 \end_layout
 
 \begin_layout Subsection
-IBM 800 zSERIES
+IBM System z10 BC
 \end_layout
 
 \begin_layout Standard
-Jako mainframe został wybrany IBM 800 zSERIES 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: wybrac tego IBM
-\end_layout
-
-\end_inset
-
-
+Jako mainframe został wybrany IBM System z10 BC.
+ Jest to serwer zapewniający bardzo wysoką wydajność potrafiący obsłużyć
+ do 248GB pamięci RAM.
+ Wspiera różne standardy kryptografii sprzętowej.
+ Dzięki 16 portom PCI-X ma możliwość dynamicznej konfiguracji i dostosowywania
+ się do potrzeb użytkowników.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1041,10 +1037,6 @@ MDF:
 
 \begin_layout Plain Layout
 ?U router
-\end_layout
-
-\begin_layout Plain Layout
-?U IBM 800 zSERIES
 \end_layout
 
 \end_inset
@@ -1965,7 +1957,7 @@ Router
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+---
 \end_layout
 
 \end_inset
@@ -1974,7 +1966,7 @@ Router
 \begin_inset Text
 
 \begin_layout Plain Layout
-Mainframe IBM
+IBM System z10
 \end_layout
 
 \end_inset
@@ -1983,7 +1975,7 @@ Mainframe IBM
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+287550,00 PLN
 \end_layout
 
 \end_inset
@@ -2001,7 +1993,7 @@ Mainframe IBM
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+862650.00 PLN
 \end_layout
 
 \end_inset
