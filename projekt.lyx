@@ -498,12 +498,12 @@ W lokalnych punktach dystrybucyjnych wymagane jest zamonotwanie odpowiedniej
 \end_layout
 
 \begin_layout Standard
-Na każdym piętrze przypada 50 stanowisk roboczych, dla każdego stanowiska
- należy uwzględnić 3 podłączenia przewodów UTP.
+Na każdym piętrze przypada 40 stanowisk roboczych, dla każdego stanowiska
+ należy uwzględnić 2 podłączenia przewodów UTP.
  Dodatkowo należy zapewnić miejsce na podłączenie AP dla sieci bezprzewodowych
  oraz w głównym punkcie dystrybucyjnym możliwość podłączenia serwera IBM
  800 zSERIES i potencjalnie innych serwerów.
- Na każde piętro należy więc przygotować, aby zachować rezerwę 170 miejsc
+ Na każde piętro należy więc przygotować, aby zachować rezerwę 81 miejsc
  w panelach krosowych.
 \end_layout
 
@@ -517,9 +517,9 @@ Do instalacji został wybrany panel krosowy MOLEX PID-00141-EU oraz PID-00142-EU
 \end_layout
 
 \begin_layout Standard
-W każdej szafie zostaną zainstalowane 3 panele PID-00142-EU (48 styków)
- oraz 1 panel PID-00141-EU (24 styki) oraz 4 organizatory do kabli.
- Panele zajmą w szafie 7U miejsca, oragnizatory 4U.
+W każdej szafie zostaną zainstalowane 2 panele PID-00142-EU (48 styków)
+ oraz 2 organizatory do kabli.
+ Panele zajmą w szafie 4U miejsca, oragnizatory 2U.
  
 \end_layout
 
@@ -548,7 +548,17 @@ IBM 800 zSERIES
 \end_layout
 
 \begin_layout Standard
-Jako mainframe został wybrany IBM 800 zSERIES
+Jako mainframe został wybrany IBM 800 zSERIES 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: wybrac tego IBM
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -577,30 +587,6 @@ Wybrano switch 48 portowy 3Com 3CR17334-91 z 4 portami SFP.
  Dodatkowo posiada możliwość nadawania priorytetów ruchowi oraz kontroli
  i zarządzania przepływem danych.
  Switch ma pojemność 17,6 Gbps oraz szybkość przekazywania 13,1 Mpps.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-to sie tak tłumaczy???
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
--- nie ma chyba serwera DHCP
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -616,20 +602,20 @@ Switch zajmuje 1U miejsca w szafie rakowej.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-http://www.fcnet.pl/Modul_SFP_550m_850nm_S_SX-24.html
+W głównym punkcie dystrybucyjnym zostanie zainstalowany switch 3Com Switch
+ 4800G (3CRS48G-24-91), który daje możliwość podłączenia światłowodów obsługując
+uch każde z pięter w budynku oraz światłowodów łączących budynku B1, B2,
+ B3 między sobą.
 \end_layout
 
-\begin_layout Plain Layout
-MDF: switch światłowodowy z modułem ethernetowym + switch ethernetowy
+\begin_layout Standard
+W switchu zostaną zainstalowany moduły Cisco XFP-10G-LR XFP  zapewniające
+ transmisję z IDF oraz 2 moduły zapewniające łącznośc na poziomie 10Gbit
+ pomiędzy budnynkami.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+Routery
 \end_layout
 
 \begin_layout Subsection
@@ -820,7 +806,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="5">
+<lyxtabular version="3" rows="13" columns="5">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -1038,7 +1024,7 @@ Moduł SFP do switcha
 \begin_inset Text
 
 \begin_layout Plain Layout
-93,04
+93,04 PLN
 \end_layout
 
 \end_inset
@@ -1047,7 +1033,7 @@ Moduł SFP do switcha
 \begin_inset Text
 
 \begin_layout Plain Layout
-1/2 na IDF
+22
 \end_layout
 
 \end_inset
@@ -1056,7 +1042,7 @@ Moduł SFP do switcha
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2046.88 PLN
 \end_layout
 
 \end_inset
@@ -1085,7 +1071,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-1556.60zł
+1556.60 PLN
 \end_layout
 
 \end_inset
@@ -1094,7 +1080,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-8
+7
 \end_layout
 
 \end_inset
@@ -1103,7 +1089,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+10896.20 PLN
 \end_layout
 
 \end_inset
@@ -1132,7 +1118,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-390,51netto
+480.32 PLN
 \end_layout
 
 \end_inset
@@ -1141,7 +1127,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-1 na każdy punkt
+14
 \end_layout
 
 \end_inset
@@ -1150,7 +1136,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6724.40 PLN
 \end_layout
 
 \end_inset
@@ -1179,7 +1165,7 @@ Kabel krosowy
 \begin_inset Text
 
 \begin_layout Plain Layout
-15,50netto
+19.06 PLN
 \end_layout
 
 \end_inset
@@ -1188,7 +1174,7 @@ Kabel krosowy
 \begin_inset Text
 
 \begin_layout Plain Layout
-duuuużo
+330
 \end_layout
 
 \end_inset
@@ -1197,7 +1183,7 @@ duuuużo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6289.80 PLN
 \end_layout
 
 \end_inset
@@ -1263,6 +1249,147 @@ mb?
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cisco XFP-10G-LR XFP 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Moduł XFP do switcha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3855.70 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23134.19 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3CRS48G-24-91
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Switch do MDF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8623.20 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ 25869.60PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1294,7 +1421,7 @@ mb?
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+RAZEM:
 \end_layout
 
 \end_inset
@@ -1431,6 +1558,11 @@ http://static.veracomp.pl/files/file_18882_1_u609.pdf -- kabel krosowy
 
 \begin_layout Plain Layout
 http://static.veracomp.pl/files/file_18712_1_u806.pdf -- kabel światłowodowy
+\end_layout
+
+\begin_layout Plain Layout
+http://www.3com.com/other/pdfs/products/en_US/3com_401083.pdf -- switch do
+ MDF
 \end_layout
 
 \end_inset
