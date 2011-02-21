@@ -308,7 +308,7 @@ Projekt logiczny sieci
 \begin_inset Note Note
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Schemat budynku:
 \end_layout
 
@@ -317,7 +317,7 @@ ten największy:
 \end_layout
 
 \begin_layout Plain Layout
-4 pietra x 5 pokoi x 10 stanowisk
+5 pietra x 50 stanowisk
 \end_layout
 
 \begin_layout Plain Layout
@@ -515,34 +515,23 @@ W każdej szafie zostaną zainstalowane 3 panele PID-00142-EU (48 styków)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-panel krosowy światłowodowy??
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 W MDF wystarczy 1 panel krosowy 24 portowy oraz 1 organizator kabli.
  
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-także panel krosowy światłowodowy
+W IDF oraz MDF wymagane są panele krosowe dla okablowania światłowodowego.
+ Wybrany został panel Molex Premise Networks FMS III z 12 portami duplexowymi
+ SC.
+ Panel zajmuje 1U miejsca w szafie.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+Panele i switch będą połączone kablami krosowymi UTP kat 6.
+ Wybrany kabel to kabel Molex Promise Networks PCD-00283-0E spełniający
+ normy TIA/EIA-568-B.2-1, FCC Part 68 (Plug demensions and tolerances), ISO
+ 60603-7, ISO 11801:2002, EN 50173:2002.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -562,7 +551,9 @@ Celem zapewnienia dostępu do sieci wymagane będzie zainstalowanie punktów
  dostępowych dla sieci bezprzewodowej.
  Planuje się instalację 2 punktów na każdym piętrze gdzie wymagany jest
  dostęp do sieci.
- Punk dostępowy to Cisco AIR-LAP1141N-E-K9
+ Punk dostępowy to Cisco AIR-LAP1141N-E-K9 wspierający standardy 802.11a/g/n.
+ Możliwość zabezpieczenia i szyfrowania dostępu z wykorzystaniem protokołów
+ WEP oraz WPA/WPA2.
 \end_layout
 
 \begin_layout Subsection
@@ -695,17 +686,9 @@ Dla każdego budynku planowany jest jeden główny punkt dystrybucyjny (MDF),
 
 \begin_layout Standard
 Okablowanie pionowe zostanie zrealizowane w technologii światłowodowej z
- wykorzystaniem 6--włóknowego kabla W-Yn0TKSd wewnętrznego wielomodowego
- (G/62,5) w tubie ścisłej o przekroju (0,9 mm) wzmocnionej włóknem aramidowym
- w powłoce nierozprzestrzeniającej płomienia.
- Kabel spełnia normę ZN-TF-12:2001 (informacje szczegółowe 
-\begin_inset CommandInset ref
-LatexCommand vpageref
-reference "sec:Specyfikacje"
-
-\end_inset
-
-).
+ wykorzystaniem 12--włóknowego (50/125) kabla wewnętrznego wielomodowego
+ CFR-00480 produkcji Molex Promise Networks w luźnej tubie o średnicy 11mm.
+ Zewnętrzna izolacja posiad status LSZH.
 \end_layout
 
 \begin_layout Standard
@@ -912,7 +895,7 @@ Panel krosowy MOLEX 24
 \begin_inset Text
 
 \begin_layout Plain Layout
-562,76
+562,76netto
 \end_layout
 
 \end_inset
@@ -959,7 +942,7 @@ Panel krosowy MOLEX 48
 \begin_inset Text
 
 \begin_layout Plain Layout
-961,57
+961,57netto
 \end_layout
 
 \end_inset
@@ -1129,7 +1112,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+30-X831
 \end_layout
 
 \end_inset
@@ -1138,7 +1121,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Światłowodowy panel krosowy
 \end_layout
 
 \end_inset
@@ -1147,7 +1130,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+390,51netto
 \end_layout
 
 \end_inset
@@ -1156,7 +1139,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1 na każdy punkt
 \end_layout
 
 \end_inset
@@ -1176,7 +1159,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+PCD-00283-0E
 \end_layout
 
 \end_inset
@@ -1185,7 +1168,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Kabel krosowy
 \end_layout
 
 \end_inset
@@ -1194,7 +1177,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+15,50netto
 \end_layout
 
 \end_inset
@@ -1203,7 +1186,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+duuuużo
 \end_layout
 
 \end_inset
@@ -1223,7 +1206,16 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
+CFR-00480
+\end_layout
 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kabel światłowodowy
 \end_layout
 
 \end_inset
@@ -1233,6 +1225,18 @@ Punkt dostępowy WiFi
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+8,89netto/metr
 \end_layout
 
 \end_inset
@@ -1241,16 +1245,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+mb?
 \end_layout
 
 \end_inset
@@ -1412,22 +1407,28 @@ Specyfikacje okablowania i sprzętu wykorzystanego w projekcie.
 status open
 
 \begin_layout Plain Layout
-http://www.tfkable.pl/data/katalogi/tfk_telekom_2006.pdf -- strona 83 i 84
- (światłowód)
-\end_layout
-
-\begin_layout Plain Layout
 http://static.veracomp.pl/files/file_2979_0_u400.pdf -- panel krosowy
 \end_layout
 
 \begin_layout Plain Layout
-http://www.3com.com/products/en_US/detail.jsp?tab=prodspec&sku=3CR17334-91&pathtype
-=purchase -- switch
+http://www.3com.com/other/pdfs/products/en_US/3com_401270.pdf -- switch
 \end_layout
 
 \begin_layout Plain Layout
 http://www.cisco.com/en/US/prod/collateral/wireless/ps5678/ps10092/datasheet_c78-5
 02793.pdf -- punkt dostępowy WiFi
+\end_layout
+
+\begin_layout Plain Layout
+http://static.veracomp.pl/files/file_3000_0_u372.pdf -- panel krosowy światłowodowy
+\end_layout
+
+\begin_layout Plain Layout
+http://static.veracomp.pl/files/file_18882_1_u609.pdf -- kabel krosowy
+\end_layout
+
+\begin_layout Plain Layout
+http://static.veracomp.pl/files/file_18712_1_u806.pdf -- kabel światłowodowy
 \end_layout
 
 \end_inset
