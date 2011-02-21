@@ -177,7 +177,7 @@ B1
 
 \begin_deeper
 \begin_layout Itemize
-serwer IBM 800 zSeries, 
+serwer IBM System z10 BC, 
 \end_layout
 
 \begin_layout Itemize
@@ -223,7 +223,7 @@ B2
 
 \begin_deeper
 \begin_layout Itemize
-serwer IBM 800 zSeries, 
+serwer IBM System z10 BC, 
 \end_layout
 
 \begin_layout Itemize
@@ -261,7 +261,7 @@ B3
 
 \begin_deeper
 \begin_layout Itemize
-serwer IBM 800 zSeries, 
+serwer IBM System z10 BC,
 \end_layout
 
 \begin_layout Itemize
@@ -293,7 +293,7 @@ SD
 \begin_layout Standard
 Dodatkowo na parterze każdego budynku (oraz w całym budynku B1) siedziby
  głównej należy zapewnić bezprzewodowy dostęp do sieci lokalnej oraz dodatkowo
- w całej sieci należy uwzględnić możliwość wykorzystania telefonii Voice-Over-IP
+ w całej sieci należy uwzględnić możliwość wykorzystania telefonii Voice-Over-IP.
 \end_layout
 
 \begin_layout Section
@@ -802,8 +802,35 @@ Sprzęt sieciowy zostanie zainstalowany w szafach rakowych.
  Celem zabezpieczenia osprzetu przed warunkami wewnętrznymi planuje się
  zamontowanie szaf zamkniętych zapewniających lepszą izolację przed zanieczyszcz
 eniami.
- Dla MDF planowane są szafy o rozmiarach ??U, natomiast szafy w IDF o rozmiarze
- ??U.
+ Zaplanowano zakup 14 szaf 32U duplex BKT.
+ Szafa wymagana jest dla każdego IDF oraz MDF.
+\end_layout
+
+\begin_layout Subsection
+Okablowanie pionowe
+\end_layout
+
+\begin_layout Standard
+Okablowanie pionowe zostanie zrealizowane w technologii światłowodowej z
+ wykorzystaniem 2--włóknowego (62,5/125) kabla wewnętrznego wielomodowego
+ 309-055 produkcji Molex Promise Networks w ścisłej tubie.
+ Kabel ma wymiar 3x6mm.
+ Wszystkie parametry włókna są zgodne z normami: IEC 793-1:1998 Category
+ A1b, EN 188202:1995 (type A1b), NF C 93-842 (type A1b), EIA/TIA - 492AAAA-A,
+ ANSI X3.166-1990, IEC 9314-3, EN 50173, ISO/IEC 11801:1995, IEEE 802.3:1998
+ (1000Base-FX).
+ Maksymalne promienie zgięć roboczego i instalacyjnego wynoszą odpowiednio
+ 3 i 5 cm.
+ Na każde piętro zostanie pociągnięta osobna para dla internetu oraz telefonii
+ VoIP.
+ 
+\end_layout
+
+\begin_layout Standard
+W związku z istnieniem kanału, w którym istnieje możliwość prowadzenia okablowan
+i pionowego prosto z globalnego punktu dystrybucyjnego wprost do lokalnych
+ punktów dystrybucyjnych długość poszczególnych odcinków została wyliczona
+ następująco: 10m + 3m*(liczba pięter do pokonania z MDF).
 \end_layout
 
 \begin_layout Standard
@@ -811,24 +838,76 @@ eniami.
 status open
 
 \begin_layout Plain Layout
-ile tam tych U -- bo ta będzie większa, tylko trzeba oszacować co tam trzeba
- wstawić, jak będziemy wiedzieć jak jest na poszczególnych piętrach itp
- komputerów, ile pięter.
+dla poszczegolnych pieter sa to wartosci
 \end_layout
 
 \begin_layout Plain Layout
-http://speckable.pl/?action=shop&tw_id=1604&kod=T232%2F600X800 -- tutaj są
- jakieś szafy
+10m
 \end_layout
 
 \begin_layout Plain Layout
-TODO: wybrać coś w stosownym rozmiarze, dodać do cennika odpowiednią ilość
- i ewentualnie informacje do specyfikacji
+13m
+\end_layout
+
+\begin_layout Plain Layout
+16m
+\end_layout
+
+\begin_layout Plain Layout
+19m
+\end_layout
+
+\begin_layout Plain Layout
+22m
+\end_layout
+
+\begin_layout Plain Layout
+wiec B1 - ten duzy:
+\end_layout
+
+\begin_layout Plain Layout
+2*(10 + 13 + 16 + 19 + 22) = 160m
+\end_layout
+
+\begin_layout Plain Layout
+male budynki
+\end_layout
+
+\begin_layout Plain Layout
+2*(10 + 13 + 16) = 78m * 2budynki = 156m
+\end_layout
+
+\begin_layout Plain Layout
+razem : 316m
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Okablowanie poziome
+\end_layout
+
+\begin_layout Standard
+Dla okablowania poziomego planowane jest wykorzystanie kabla UTP drut 4x2x0.5mm
+ kat.
+ 6 Cu A-LAN.
+ Kabel spełnia wymagania kategorii 6 zgodnie z ISO/IEC 11801; EN 50173;
+ IEC 61156-5 oraz EN 50288-4-1.
+ Próba palności według IEC 60332-1 (HD 405-1).
+ Wykorzystanie kabla kat.
+ 6 umożliwi w przyszłości zwiększenie przepustowości łącz do 1Gb.
+\end_layout
+
+\begin_layout Standard
+Okablowanie poziome zostanie poprowadzone natynkowo w niepalnych korytkach
+ kablowych PCV.
+ W korytkach zostaną zamontowane gniazda przy każdym stanowisku roboczym.
+ Poprowadzenie okablowania w korytkach pozwoli na łatwiejsze dokonywanie
+ potnecjalnych napraw i/lub modyfikacji w już zainstalowanym okablowaniu.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -847,7 +926,7 @@ Na każdym piętrze przypada 40 stanowisk roboczych, dla każdego stanowiska
  należy uwzględnić 2 podłączenia przewodów UTP.
  Dodatkowo należy zapewnić miejsce na podłączenie AP dla sieci bezprzewodowych
  oraz w głównym punkcie dystrybucyjnym możliwość podłączenia serwera IBM
- 800 zSERIES i potencjalnie innych serwerów.
+ System z10 i potencjalnie innych serwerów.
  Na każde piętro należy więc przygotować, aby zachować rezerwę 81 miejsc
  w panelach krosowych.
 \end_layout
@@ -889,21 +968,17 @@ Panele i switch będą połączone kablami krosowymi UTP kat 6.
 \end_layout
 
 \begin_layout Subsection
-IBM 800 zSERIES
+IBM System z10 BC
 \end_layout
 
 \begin_layout Standard
-Jako mainframe został wybrany IBM 800 zSERIES 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: wybrac tego IBM
-\end_layout
-
-\end_inset
-
-
+Jako mainframe został wybrany IBM System z10 BC.
+ Jest to serwer zapewniający bardzo wysoką wydajność potrafiący obsłużyć
+ do 248GB pamięci RAM.
+ Wspiera różne standardy kryptografii sprzętowej.
+ Dzięki 16 portom PCI-X ma możliwość dynamicznej konfiguracji i dostosowywania
+ się do potrzeb użytkowników.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -943,7 +1018,7 @@ W porty SFP będą wpięte moduły SFP 550m 850nm (S-SX) zapewniające transmisj
 
 \begin_layout Standard
 Switch zajmuje 1U miejsca w szafie rakowej.
- W szafie IDF będzie to 2U miejsca.
+ W szafie IDF będzie to docelowo (VoIP) 2U miejsca.
 \end_layout
 
 \begin_layout Standard
@@ -972,31 +1047,59 @@ Rozmieszczenie elementów w szafie
 status open
 
 \begin_layout Plain Layout
-Co będzie potrzeba:
+IDF:
 \end_layout
 
 \begin_layout Plain Layout
-- szafy rakowe do MDF + na każdy IDF
+1U panel krosowy światłowodowy
 \end_layout
 
 \begin_layout Plain Layout
-- 2 x AP na parter do B2 i B3
+1U switch VoIP
 \end_layout
 
 \begin_layout Plain Layout
-- 3xIBM zSeries
+1U switch
 \end_layout
 
 \begin_layout Plain Layout
-- panele krosowe
+1U org kabli
 \end_layout
 
 \begin_layout Plain Layout
-- switche do MDF + IDF (światłowód !!!)
+2U panel kros
 \end_layout
 
 \begin_layout Plain Layout
-- jakies routery do MDF ???
+1U org kabli
+\end_layout
+
+\begin_layout Plain Layout
+2U panel kros
+\end_layout
+
+\begin_layout Plain Layout
+MDF:
+\end_layout
+
+\begin_layout Plain Layout
+1U panel krosowy światłowodowy
+\end_layout
+
+\begin_layout Plain Layout
+1U org kabli
+\end_layout
+
+\begin_layout Plain Layout
+1U panel krosowy
+\end_layout
+
+\begin_layout Plain Layout
+1U switch
+\end_layout
+
+\begin_layout Plain Layout
+?U router
 \end_layout
 
 \end_inset
@@ -1018,33 +1121,6 @@ Dla każdego budynku planowany jest jeden główny punkt dystrybucyjny (MDF),
  2 przewodów przypadających na każde stanowisko robocze.
  Pomiędzy oddziałami oraz filiami nie jest planowane instalowanie okablowania,
  lecz dzierżawienie odpowiednich łączy od zewnętrznych operatorów.
- 
-\end_layout
-
-\begin_layout Standard
-Okablowanie pionowe zostanie zrealizowane w technologii światłowodowej z
- wykorzystaniem 12--włóknowego (50/125) kabla wewnętrznego wielomodowego
- CFR-00480 produkcji Molex Promise Networks w luźnej tubie o średnicy 11mm.
- Zewnętrzna izolacja posiad status LSZH.
-\end_layout
-
-\begin_layout Standard
-Dla okablowania poziomego planowane jest wykorzystanie kabla UTP drut 4x2x0.5mm
- kat.
- 6 Cu A-LAN.
- Kabel spełnia wymagania kategorii 6 zgodnie z ISO/IEC 11801; EN 50173;
- IEC 61156-5 oraz EN 50288-4-1.
- Próba palności według IEC 60332-1 (HD 405-1).
- Wykorzystanie kabla kat.
- 6 umożliwi w przyszłości zwiększenie przepustowości łącz do 1Gb.
-\end_layout
-
-\begin_layout Standard
-Okablowanie poziome zostanie poprowadzone natynkowo w niepalnych korytkach
- kablowych PCV.
- W korytkach zostaną zamontowane gniazda przy każdym stanowisku roboczym.
- Poprowadzenie okablowania w korytkach pozwoli na łatwiejsze dokonywanie
- potnecjalnych napraw i/lub modyfikacji w już zainstalowanym okablowaniu.
  
 \end_layout
 
@@ -1124,16 +1200,932 @@ Harmonogram i kosztorys
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float table
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-kabel UTP - 1,40zł/mb
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="19" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Identyfikator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nazwa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cena
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sztuk
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Razem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PID-00141-EU
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Panel krosowy MOLEX 24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+692.19 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2076.57 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PID-00142-EU
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Panel krosowy MOLEX 48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1182.73 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26020.06 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3CR17334-91
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Switch 48 port + SFP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2063.45 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22697.95 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S-SX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Moduł SFP do switcha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+93.04 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2046.88 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cisco AIR-LAP1141N-E-K9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Punkt dostępowy WiFi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1556.60 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10896.20 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30-X831
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Światłowodowy panel krosowy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+480.32 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6724.40 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PCD-00283-0E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kabel krosowy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.06 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+330
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6289.80 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+309-055
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kabel światłowodowy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.41 PLN/m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+316m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+761.56 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kabel UTP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.40 PLN/m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9350m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13090.00 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cisco XFP-10G-LR XFP 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Moduł XFP do switcha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3855.70 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23134.19 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Korytko kablowe 35x15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.09 PLN/m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+900m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1881.00 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Korytko kablowe 130x60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.37 PLN/m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+264m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5113.68 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Korytko kablowe 60x60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.92 PLN/m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+341m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3041.71 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Szafa 32U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Szafa rakowa 32U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+905.46 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12676.44 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3CRS48G-24-91
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Switch do MDF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8623.20 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ 25869.60 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Router
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IBM System z10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+287550,00 PLN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+862650.00 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RAZEM:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
-http://www.baspol.comweb.pl/content.php?str=produkty#korytka-kablowe - korytka
- kablowe ceny
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Zestawienie cen.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1151,7 +2143,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="13" columns="5">
+<lyxtabular version="3" rows="4" columns="5">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -1210,100 +2202,6 @@ Razem
 \begin_inset Text
 
 \begin_layout Plain Layout
-PID-00141-EU
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Panel krosowy MOLEX 24
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-562,76netto
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1 na IDF
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-PID-00142-EU
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Panel krosowy MOLEX 48
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-961,57netto
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3 na IDF
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 3CR17334-91
 \end_layout
 
@@ -1322,7 +2220,7 @@ Switch 48 port + SFP
 \begin_inset Text
 
 \begin_layout Plain Layout
-2 063,45 zł
+2063.45 PLN
 \end_layout
 
 \end_inset
@@ -1331,7 +2229,7 @@ Switch 48 port + SFP
 \begin_inset Text
 
 \begin_layout Plain Layout
-2 na IDF
+11
 \end_layout
 
 \end_inset
@@ -1340,7 +2238,7 @@ Switch 48 port + SFP
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+22697.95 PLN
 \end_layout
 
 \end_inset
@@ -1360,7 +2258,7 @@ S-SX
 \begin_inset Text
 
 \begin_layout Plain Layout
-Moduł SFP do switcha
+Moduł SFP do switchy
 \end_layout
 
 \end_inset
@@ -1369,7 +2267,7 @@ Moduł SFP do switcha
 \begin_inset Text
 
 \begin_layout Plain Layout
-93,04 PLN
+93.04 PLN
 \end_layout
 
 \end_inset
@@ -1388,347 +2286,6 @@ Moduł SFP do switcha
 
 \begin_layout Plain Layout
 2046.88 PLN
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Cisco AIR-LAP1141N-E-K9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Punkt dostępowy WiFi
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1556.60 PLN
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10896.20 PLN
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30-X831
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Światłowodowy panel krosowy
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-480.32 PLN
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-14
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6724.40 PLN
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-PCD-00283-0E
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Kabel krosowy
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-19.06 PLN
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-330
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6289.80 PLN
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-CFR-00480
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Kabel światłowodowy
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-8,89netto/metr
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-mb?
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Cisco XFP-10G-LR XFP 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Moduł XFP do switcha
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3855.70 PLN
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-23134.19 PLN
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3CRS48G-24-91
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Switch do MDF
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-8623.20 PLN
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
- 25869.60PLN
 \end_layout
 
 \end_inset
@@ -1775,6 +2332,216 @@ RAZEM:
 \begin_inset Text
 
 \begin_layout Plain Layout
+24744.83 PLN
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Zestawienie kosztów instalacji VoIP.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dodatkowo należy uwzględnić koszt zakupu wybranych modeli telefonów, które
+ mają zostać zainstalowane.
+\end_layout
+
+\begin_layout Section
+Koszty utrzymania
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Opis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cena
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dzierżawienie kabli światłowodowych pomiędzy filiami
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dostęp do sieci internetowej w budynku B1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dostęp do sieci internetowej w budynku B2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dostęp do sieci internetowej w budynku B3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dostęp do sieci internetowej w filii zamiejskiej nr 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dostęp do sieci internetowej w filii zamiejskiej nr 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RAZEM:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1792,11 +2559,15 @@ RAZEM:
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Zestawienie cen.
+Zestawienie miesięcznych kosztów utrzymania.
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1902,7 +2673,7 @@ http://static.veracomp.pl/files/file_18882_1_u609.pdf -- kabel krosowy
 \end_layout
 
 \begin_layout Plain Layout
-http://static.veracomp.pl/files/file_18712_1_u806.pdf -- kabel światłowodowy
+http://static.veracomp.pl/files/file_2846_0_u87.pdf -- kabel światłowodowy
 \end_layout
 
 \begin_layout Plain Layout
