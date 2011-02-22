@@ -616,8 +616,7 @@ Plan piętra
 
 \begin_layout Standard
 Na każdym piętrze jest 40 stanowisko pracy oraz 1 pokój przeznaczony na
- infrastrukturę sieciową.
- 
+ infrastrukturę sieciową --- dalej zwany serwerownią.
 \end_layout
 
 \begin_layout Chapter
@@ -672,13 +671,8 @@ Gbit/s.
 \series bold
 panel światłowodowy do routera z portami SFZ? wyposażonymi w konwertery
  optyczno-elektryczne.
-\end_layout
+\series default
 
-\begin_layout Standard
-Dokumentacja dzierżawionych łączy zostanie dostarczona przez właściciela.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -691,8 +685,445 @@ poprawić na prawdziwe :)
 
 \end_layout
 
+\begin_layout Standard
+Dokumentacja dzierżawionych łączy zostanie dostarczona przez właściciela.
+\end_layout
+
+\begin_layout Standard
+Głowne punkty dystrybucyjne (MDF) zostaną umieszczone w
+\begin_inset space ~
+\end_inset
+
+serwerowniach na parterze.
+ Za MDF posłuży router oraz serwer IBM System z10.
+ Na każdym piętrze będzie postawiony IDF połączony bezpośrednio z
+\begin_inset space ~
+\end_inset
+
+MDF światłowodem wielomodowym.
+ Jako IDF zostaną użyte switche 48 portowe, do których zostaną podłączone
+ gigabitowe kable ethernet poprowadzone do terminali klienckich.
+\end_layout
+
+\begin_layout Standard
+Do połączenia oddziałów zamiejscowych z
+\begin_inset space ~
+\end_inset
+
+oddziałem głównym zostanie wykorzystana sieć WAN.
+ Do ukrycia fizycznej rozdzielności sieci oddziałów zamiejscowych zostanie
+ wykorzysty VPN network-to-network.
+\end_layout
+
+\begin_layout Standard
+W
+\begin_inset space ~
+\end_inset
+
+sieci będą 3
+\begin_inset space ~
+\end_inset
+
+serwery IBM System z10 hostujące Microsoft Dynamics, Enova (tylko w
+\begin_inset space ~
+\end_inset
+
+budynku B1) oraz serwery plików.
+\end_layout
+
 \begin_layout Section
 Plan adresacji sieci i wymagane protokoły
+\end_layout
+
+\begin_layout Standard
+Do adresacji zostanie wykorzystana pula adresów 10.0.0.0/8, gdzie poszczególne
+ części adresu będą oznaczały fizyczną lokalizację urządzenia o
+\begin_inset space ~
+\end_inset
+
+danym adresie IP.
+ Adres należy interpretować wedlug wzorca: 10.<BUDYNEK>.<PIĘTRO>.<URZĄDZENIE>,
+ gdzie: BUDYNEK to wartości 0-5 oznaczające kolejno B1, B2, B3 oraz pierwszy
+ i
+\begin_inset space ~
+\end_inset
+
+drugi oddział terenowy, PIĘTRO --- numer piętra liczony od 0, URZĄDZENIE
+ to kolejne numery przydzielane urządzeniom.
+ Sieci WiFi będą oferowały tylko dostęp do sieci WAN, nie pozwalając na
+ dostęp do lokalnej sieci firmowej.
+ Dla sieci WiFi będą przydzielane losowe adresy z
+\begin_inset space ~
+\end_inset
+
+puli adresów 192.168.0.0/16.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Co z adresami dla WiFi? Czy to może być? Mamy tylko access pointy, nie wiem
+ czy mają DHCP czy musimy przydzielać adresy w routerze w MDF?
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Przy połączeniach do Internetu i
+\begin_inset space ~
+\end_inset
+
+z
+\begin_inset space ~
+\end_inset
+
+Internetu do sieci firmowej zostaną wykorzystane techniki SNAT oraz DNAT.
+ 
+\end_layout
+
+\begin_layout Standard
+Do trasowania pakietów zostanie użyty routing statyczny.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adresacja 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Urządzenie
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sieć
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adres
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Router MDF --- budynek B1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.0.0/24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IBM z10 --- budynek B1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.0.0/24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.0.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Router MDF --- budynek B2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.1.0.0/24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.1.0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IBM z10 --- budynek B2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.1.0.0/24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.1.0.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Router MDF --- budynek B3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.2.0.0/24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.2.0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IBM z10 --- budynek B3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.2.0.0/24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.2.0.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Czy switchom przydzielami adresy IP dla celow administracyjnych(może rezerwować
+ 16 pierwszych adresow IP na piętrze dla urządzeń sieciowych)? Może wydzielamy
+ VLANy na pietrach? (jesli tak to wspomnieć także w 
+\begin_inset Quotes gld
+\end_inset
+
+koncepcji rozwiązania
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -754,6 +1185,24 @@ Celem zapewnienia bezpieczeństwa sieci planuje się utworzenie sieci VPN
  Zapewni to wysoki stopień przezroszystości, łatwość komunikacji oraz wysoki
  poziom bezpieczeństwa transmisji.
  
+\end_layout
+
+\begin_layout Standard
+W siedzibie głównej sieci WiFi będa oferowały jedynie dostęp do sieci Internet,
+ bez dostępu do zasobów sieci firmowej.
+ Dodatkowo sieć WiFi zabezpieczona poprzez WPA2 z
+\begin_inset space ~
+\end_inset
+
+losowo wygenerowanym silnym hasłem (do administratora będzie należało zapewnieni
+e odpowiednio losowego niesłownikowego hasła).
+ Dla wygody użytkowników nie zostanie włączone filtrowanie adresów MAC.
+\end_layout
+
+\begin_layout Standard
+Serwery DHCP dla sieci kablowej będą miały na stałe przydzielone adresy
+ IP dla poszczególnych numerów MAC, dodatkowo włączone bedzie filtrowanie
+ pakietów od nieznanych urządzeń sieciowych.
 \end_layout
 
 \begin_layout Section
