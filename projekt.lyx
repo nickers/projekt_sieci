@@ -1487,6 +1487,17 @@ W switchu zostaną zainstalowany moduły Cisco XFP-10G-LR XFP  zapewniające
 Routery
 \end_layout
 
+\begin_layout Standard
+W każdym MDF zostanie zainstalowany router CISCO 7206VXR.
+ Jest to wydajny router wspierający wybrane przez nas technologie.
+ Wspiera wybrane monitorowanie i zarządzanie z wykorzystnaniem protokołu
+ SNMP oraz wybrany protokół routingu OSPF.
+ Router jest w obudowie wspierającej montaż w szafie rakowej -- zajmuje
+ 3U miejsca w szafie.
+ Router wspiera połączenia o szybkości 1Gbps.
+ Wyposażony jest w procesor Broadcom BCM1250 700 MHz.
+\end_layout
+
 \begin_layout Subsection
 Rozmieszczenie elementów w szafie
 \end_layout
@@ -1548,7 +1559,7 @@ MDF:
 \end_layout
 
 \begin_layout Plain Layout
-?U router
+3U router
 \end_layout
 
 \end_inset
@@ -1753,7 +1764,7 @@ Panel krosowy MOLEX 24
 \begin_inset Text
 
 \begin_layout Plain Layout
-2076.57 PLN
+2 076.57 PLN
 \end_layout
 
 \end_inset
@@ -1800,7 +1811,7 @@ Panel krosowy MOLEX 48
 \begin_inset Text
 
 \begin_layout Plain Layout
-26020.06 PLN
+26 020.06 PLN
 \end_layout
 
 \end_inset
@@ -1847,7 +1858,7 @@ Switch 48 port + SFP
 \begin_inset Text
 
 \begin_layout Plain Layout
-22697.95 PLN
+22 697.95 PLN
 \end_layout
 
 \end_inset
@@ -1894,7 +1905,7 @@ Moduł SFP do switcha
 \begin_inset Text
 
 \begin_layout Plain Layout
-2046.88 PLN
+2 046.88 PLN
 \end_layout
 
 \end_inset
@@ -1941,7 +1952,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-10896.20 PLN
+10 896.20 PLN
 \end_layout
 
 \end_inset
@@ -1988,7 +1999,7 @@ Punkt dostępowy WiFi
 \begin_inset Text
 
 \begin_layout Plain Layout
-6724.40 PLN
+6 724.40 PLN
 \end_layout
 
 \end_inset
@@ -2035,7 +2046,7 @@ Kabel krosowy
 \begin_inset Text
 
 \begin_layout Plain Layout
-6289.80 PLN
+6 289.80 PLN
 \end_layout
 
 \end_inset
@@ -2129,7 +2140,7 @@ Kabel UTP
 \begin_inset Text
 
 \begin_layout Plain Layout
-13090.00 PLN
+13 090.00 PLN
 \end_layout
 
 \end_inset
@@ -2176,7 +2187,7 @@ Moduł XFP do switcha
 \begin_inset Text
 
 \begin_layout Plain Layout
-23134.19 PLN
+23 134.19 PLN
 \end_layout
 
 \end_inset
@@ -2223,7 +2234,7 @@ Korytko kablowe 35x15
 \begin_inset Text
 
 \begin_layout Plain Layout
-1881.00 PLN
+1 881.00 PLN
 \end_layout
 
 \end_inset
@@ -2270,7 +2281,7 @@ Korytko kablowe 130x60
 \begin_inset Text
 
 \begin_layout Plain Layout
-5113.68 PLN
+5 113.68 PLN
 \end_layout
 
 \end_inset
@@ -2317,7 +2328,7 @@ Korytko kablowe 60x60
 \begin_inset Text
 
 \begin_layout Plain Layout
-3041.71 PLN
+3 041.71 PLN
 \end_layout
 
 \end_inset
@@ -2364,7 +2375,7 @@ Szafa rakowa 32U
 \begin_inset Text
 
 \begin_layout Plain Layout
-12676.44 PLN
+12 676.44 PLN
 \end_layout
 
 \end_inset
@@ -2411,7 +2422,7 @@ Switch do MDF
 \begin_inset Text
 
 \begin_layout Plain Layout
- 25869.60 PLN
+ 25 869.60 PLN
 \end_layout
 
 \end_inset
@@ -2422,7 +2433,7 @@ Switch do MDF
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7206VXR
 \end_layout
 
 \end_inset
@@ -2431,7 +2442,7 @@ Switch do MDF
 \begin_inset Text
 
 \begin_layout Plain Layout
-Router
+CISCO 7206VXR
 \end_layout
 
 \end_inset
@@ -2440,7 +2451,7 @@ Router
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+30048.98 PLN
 \end_layout
 
 \end_inset
@@ -2458,7 +2469,7 @@ Router
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+90 146.92 PLN
 \end_layout
 
 \end_inset
@@ -2505,7 +2516,7 @@ IBM System z10
 \begin_inset Text
 
 \begin_layout Plain Layout
-862650.00 PLN
+862 650.00 PLN
 \end_layout
 
 \end_inset
@@ -2552,7 +2563,7 @@ RAZEM:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1 113 040.39 PLN
 \end_layout
 
 \end_inset
@@ -2836,7 +2847,7 @@ status open
 <lyxtabular version="3" rows="8" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2847,7 +2858,7 @@ Opis
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2867,11 +2878,11 @@ Dzierżawienie kabli światłowodowych pomiędzy filiami
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4 800.00 PLN
 \end_layout
 
 \end_inset
@@ -2887,11 +2898,11 @@ Dostęp do sieci internetowej w budynku B1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6 500.00 PLN
 \end_layout
 
 \end_inset
@@ -2907,11 +2918,11 @@ Dostęp do sieci internetowej w budynku B2
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6 500.00 PLN
 \end_layout
 
 \end_inset
@@ -2927,11 +2938,11 @@ Dostęp do sieci internetowej w budynku B3
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6 500.00 PLN
 \end_layout
 
 \end_inset
@@ -2947,11 +2958,11 @@ Dostęp do sieci internetowej w filii zamiejskiej nr 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1 300.00 PLN
 \end_layout
 
 \end_inset
@@ -2967,11 +2978,11 @@ Dostęp do sieci internetowej w filii zamiejskiej nr 2
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1 300.00 PLN
 \end_layout
 
 \end_inset
@@ -2987,11 +2998,11 @@ RAZEM:
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+26 900.00 PLN
 \end_layout
 
 \end_inset
