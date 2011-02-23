@@ -1794,26 +1794,6 @@ IBM z10 --- budynek B3
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Czy switchom przydzielami adresy IP dla celow administracyjnych(może rezerwować
- 16 pierwszych adresow IP na piętrze dla urządzeń sieciowych)? Może wydzielamy
- VLANy na pietrach? (jesli tak to wspomnieć także w 
-\begin_inset Quotes gld
-\end_inset
-
-koncepcji rozwiązania
-\begin_inset Quotes grd
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1874,7 +1854,15 @@ Celem zapewnienia bezpieczeństwa sieci planuje się utworzenie sieci VPN
  pomiędzy oddziałami miejskimi oraz oddziałami zamiejskimi.
  Zapewni to wysoki stopień przezroszystości, łatwość komunikacji oraz wysoki
  poziom bezpieczeństwa transmisji.
- 
+\end_layout
+
+\begin_layout Standard
+Każde piętro będzie miało działalo w
+\begin_inset space ~
+\end_inset
+
+ramach oddzielnego VLANu, dodatkowo sieci WiFi będą miały wydzielone własne
+ VLANy.
 \end_layout
 
 \begin_layout Standard
@@ -1891,7 +1879,7 @@ e odpowiednio losowego niesłownikowego hasła).
 
 \begin_layout Standard
 Serwery DHCP dla sieci kablowej będą miały na stałe przydzielone adresy
- IP dla poszczególnych numerów MAC, dodatkowo włączone bedzie filtrowanie
+ IP dla poszczególnych numerów MAC, dodatkowo włączone będzie filtrowanie
  pakietów od nieznanych urządzeń sieciowych.
 \end_layout
 
