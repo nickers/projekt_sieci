@@ -107,7 +107,11 @@ siecią WAN oraz z
 \begin_inset space ~
 \end_inset
 
-2 oddziałami terenowymi.
+2
+\begin_inset space ~
+\end_inset
+
+oddziałami terenowymi.
 \end_layout
 
 \begin_layout Subsection
@@ -158,8 +162,11 @@ WAN
 SR
 \series default
 ).
- W połączeniach oddziałów terenowych z siedzibą główną należy uwzględnić
- dodatkowe łącza awaryjne.
+ W połączeniach oddziałów terenowych z
+\begin_inset space ~
+\end_inset
+
+siedzibą główną należy uwzględnić dodatkowe łącza awaryjne.
  
 \end_layout
 
@@ -1927,8 +1934,15 @@ Szafy rakowe
 
 \begin_layout Standard
 Sprzęt sieciowy zostanie zainstalowany w szafach rakowych.
- Szafa taka zostanie umieszczona w każdym głównym punkcie dostępowym oraz
- w każdym lokalnym punkcie dostępowym.
+ Szafa taka zostanie umieszczona w
+\begin_inset space ~
+\end_inset
+
+każdym głównym punkcie dostępowym oraz w
+\begin_inset space ~
+\end_inset
+
+każdym lokalnym punkcie dostępowym.
  Celem zabezpieczenia osprzętu przed warunkami wewnętrznymi planuje się
  zamontowanie szaf zamkniętych zapewniających lepszą izolację przed zanieczyszcz
 eniami.
@@ -1945,12 +1959,30 @@ Okablowanie pionowe zostanie zrealizowane w technologii światłowodowej z
  wykorzystaniem 2--włóknowego (62,5/125) kabla wewnętrznego wielomodowego
  309-055 produkcji Molex Promise Networks w ścisłej tubie.
  Kabel ma wymiar 3x6mm.
- Wszystkie parametry włókna są zgodne z normami: IEC 793-1:1998 Category
- A1b, EN 188202:1995 (type A1b), NF C 93-842 (type A1b), EIA/TIA - 492AAAA-A,
- ANSI X3.166-1990, IEC 9314-3, EN 50173, ISO/IEC 11801:1995, IEEE 802.3:1998
- (1000Base-FX).
- Maksymalne promienie zgięć roboczego i instalacyjnego wynoszą odpowiednio
- 3 i 5 cm.
+ Wszystkie parametry włókna są zgodne z
+\begin_inset space ~
+\end_inset
+
+normami: IEC 793-1:1998 Category A1b, EN 188202:1995 (type A1b), NF C 93-842
+ (type A1b), EIA/TIA - 492AAAA-A, ANSI X3.166-1990, IEC 9314-3, EN 50173,
+ ISO/IEC 11801:1995, IEEE 802.3:1998 (1000Base-FX).
+ Maksymalne promienie zgięć roboczego i
+\begin_inset space ~
+\end_inset
+
+instalacyjnego wynoszą odpowiednio 3
+\begin_inset space ~
+\end_inset
+
+i
+\begin_inset space ~
+\end_inset
+
+5
+\begin_inset space ~
+\end_inset
+
+cm.
  Na każde piętro zostanie pociągnięta osobna para dla internetu oraz telefonii
  VoIP.
  
@@ -1958,9 +1990,17 @@ Okablowanie pionowe zostanie zrealizowane w technologii światłowodowej z
 
 \begin_layout Standard
 W związku z istnieniem kanału, w którym istnieje możliwość prowadzenia okablowan
-i pionowego prosto z globalnego punktu dystrybucyjnego wprost do lokalnych
- punktów dystrybucyjnych długość poszczególnych odcinków została wyliczona
- następująco: 10m + 3m*(liczba pięter do pokonania z MDF).
+i pionowego prosto z
+\begin_inset space ~
+\end_inset
+
+globalnego punktu dystrybucyjnego wprost do lokalnych punktów dystrybucyjnych
+ długość poszczególnych odcinków została wyliczona następująco: 10m + 3m*(liczba
+ pięter do pokonania z
+\begin_inset space ~
+\end_inset
+
+MDF).
 \end_layout
 
 \begin_layout Standard
@@ -2028,15 +2068,27 @@ Dla okablowania poziomego planowane jest wykorzystanie kabla UTP drut 4x2x0.5mm
  IEC 61156-5 oraz EN 50288-4-1.
  Próba palności według IEC 60332-1 (HD 405-1).
  Wykorzystanie kabla kat.
- 6 umożliwi w przyszłości zwiększenie przepustowości łącz do 1Gb.
+ 6
+\begin_inset space ~
+\end_inset
+
+umożliwi w przyszłości zwiększenie przepustowości łącz do 1Gb.
 \end_layout
 
 \begin_layout Standard
 Okablowanie poziome zostanie poprowadzone natynkowo w niepalnych korytkach
  kablowych PCV.
  W korytkach zostaną zamontowane gniazda przy każdym stanowisku roboczym.
- Poprowadzenie okablowania w korytkach pozwoli na łatwiejsze dokonywanie
- potencjalnych napraw i/lub modyfikacji w już zainstalowanym okablowaniu.
+ Poprowadzenie okablowania w
+\begin_inset space ~
+\end_inset
+
+korytkach pozwoli na łatwiejsze dokonywanie potencjalnych napraw i/lub modyfikac
+ji w
+\begin_inset space ~
+\end_inset
+
+już zainstalowanym okablowaniu.
  
 \end_layout
 
@@ -2169,8 +2221,19 @@ Switche
 
 \begin_layout Standard
 Wybrano switch 48 portowy 3Com 3CR17334-91 z 4 portami SFP.
- Wspiera on wiele standardów w tym zarządzanie i monitoring z wykorzystaniem
- SNMP oraz RMON.
+ Wspiera on wiele standardów w
+\begin_inset space ~
+\end_inset
+
+tym zarządzanie i
+\begin_inset space ~
+\end_inset
+
+monitoring z
+\begin_inset space ~
+\end_inset
+
+wykorzystaniem SNMP oraz RMON.
  Bezpieczeństwo jest zapewniane ze wsparciem standardów 802.1X oraz RADIUS.
  Dodatkowo posiada możliwość nadawania priorytetów ruchowi oraz kontroli
  i zarządzania przepływem danych.
@@ -2198,8 +2261,15 @@ ych każde z pięter w budynku oraz światłowodów łączących budynku B1, B2,
 
 \begin_layout Standard
 W switchu zostaną zainstalowany moduły Cisco XFP-10G-LR XFP  zapewniające
- transmisję z IDF oraz 2 moduły zapewniające łączność na poziomie 10Gbit
- pomiędzy budynkami.
+ transmisję z
+\begin_inset space ~
+\end_inset
+
+IDF oraz 2
+\begin_inset space ~
+\end_inset
+
+moduły zapewniające łączność na poziomie 10Gbit pomiędzy budynkami.
 \end_layout
 
 \begin_layout Subsection
