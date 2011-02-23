@@ -99,7 +99,7 @@ oddziały miejskie pewnej firmy, zapewniająca komunikację w
 \begin_inset space ~
 \end_inset
 
-ramach całej siedziby głównej, łącznać z
+ramach całej siedziby głównej, łączność z
 \begin_inset space ~
 \end_inset
 
@@ -538,7 +538,7 @@ Schematy budynków
 \end_layout
 
 \begin_layout Standard
-Wsystkie trzy budynki B1, B2 i B3 zbudowane są na tym samym planie a posiadają
+Wszystkie trzy budynki B1, B2 i B3 zbudowane są na tym samym planie a posiadają
  różną liczbę pięter, odpowiednio 5 pięter, 3 piętra i 3 piętra.
 \end_layout
 
@@ -681,12 +681,12 @@ adaptery sieci optycznych.
 \end_layout
 
 \begin_layout Standard
-Głowne punkty dystrybucyjne (MDF) zostaną umieszczone w
+Główne punkty dystrybucyjne (MDF) zostaną umieszczone w
 \begin_inset space ~
 \end_inset
 
 serwerowniach na parterze.
- Za MDF posłuży router do któreg będzie podłączony główny switch.
+ Za MDF posłuży router do którego będzie podłączony główny switch.
  Serwer IBM System z10 będzie podłączony bezpośrednio do routera.
 \end_layout
 
@@ -702,7 +702,7 @@ MDF światłowodem wielomodowym.
 \begin_inset space ~
 \end_inset
 
-nieg będzie kierowany jedynie do routera.
+niego będzie kierowany jedynie do routera.
 \end_layout
 
 \begin_layout Standard
@@ -728,7 +728,7 @@ Do połączenia oddziałów zamiejscowych z
 
 oddziałem głównym zostanie wykorzystana sieć WAN.
  Do ukrycia fizycznej rozdzielności sieci oddziałów zamiejscowych zostanie
- wykorzysty VPN network-to-network.
+ wykorzystany VPN network-to-network.
 \end_layout
 
 \begin_layout Standard
@@ -820,7 +820,7 @@ Do adresacji zostanie wykorzystana pula adresów 10.0.0.0/8, gdzie poszczególne
 \end_inset
 
 danym adresie IP.
- Adres należy interpretować wedlug wzorca: 10.<BUDYNEK>.<PIĘTRO>.<URZĄDZENIE>,
+ Adres należy interpretować według wzorca: 10.<BUDYNEK>.<PIĘTRO>.<URZĄDZENIE>,
  gdzie: BUDYNEK to wartości 0-5 oznaczające kolejno B1, B2, B3 oraz pierwszy
  i
 \begin_inset space ~
@@ -1776,12 +1776,12 @@ h elementów, adresy na stałe w DHCP
 \begin_layout Standard
 Celem zapewnienia bezpieczeństwa sieci planuje się utworzenie sieci VPN
  pomiędzy oddziałami miejskimi oraz oddziałami zamiejskimi.
- Zapewni to wysoki stopień przezroszystości, łatwość komunikacji oraz wysoki
+ Zapewni to wysoki stopień przezroczystości, łatwość komunikacji oraz wysoki
  poziom bezpieczeństwa transmisji.
 \end_layout
 
 \begin_layout Standard
-Każde piętro będzie miało działalo w
+Każde piętro będzie działało w
 \begin_inset space ~
 \end_inset
 
@@ -1790,7 +1790,7 @@ ramach oddzielnego VLANu, dodatkowo sieci WiFi będą miały wydzielone własne
 \end_layout
 
 \begin_layout Standard
-W siedzibie głównej sieci WiFi będa oferowały jedynie dostęp do sieci Internet,
+W siedzibie głównej sieci WiFi będą oferowały jedynie dostęp do sieci Internet,
  bez dostępu do zasobów sieci firmowej.
  Dodatkowo sieć WiFi zabezpieczona poprzez WPA2 z
 \begin_inset space ~
@@ -1808,7 +1808,7 @@ Serwery DHCP dla sieci kablowej będą miały na stałe przydzielone adresy
 \end_layout
 
 \begin_layout Standard
-Planuje się także skonfgurowanie firewall'a, który będzie zapewniał odpowiednie
+Planuje się także skonfigurowanie firewall'a, który będzie zapewniał odpowiednie
  filtrowanie ruchu w sieci oraz do i
 \begin_inset space ~
 \end_inset
@@ -1882,14 +1882,14 @@ Plan zarządzania siecią
 \begin_layout Standard
 W celu monitorowania sprzętu aktywnego zostanie użyte oprogramowanie PRTG
  Network Monitor --- głównie używając protokołu SNMP.
- Szybkie fizyczne lokalizowanie awarii sprzętu ułatwii zastosowana metodologia
+ Szybkie fizyczne lokalizowanie awarii sprzętu ułatwi zastosowana metodologia
  nadawania adresów IP dla urządzeń --- adres wskazuje fizyczne położenie
  każdego urządzenia.
  Dodatkowo do każdego urządzenia na stałe będzie przypisany 1 adres IP z
 \begin_inset space ~
 \end_inset
 
-puli danego piętra --- zostanie on przypisany do adresu MAC urząrzenia.
+puli danego piętra --- zostanie on przypisany do adresu MAC urządzenia.
 \end_layout
 
 \begin_layout Standard
@@ -1929,7 +1929,7 @@ Szafy rakowe
 Sprzęt sieciowy zostanie zainstalowany w szafach rakowych.
  Szafa taka zostanie umieszczona w każdym głównym punkcie dostępowym oraz
  w każdym lokalnym punkcie dostępowym.
- Celem zabezpieczenia osprzetu przed warunkami wewnętrznymi planuje się
+ Celem zabezpieczenia osprzętu przed warunkami wewnętrznymi planuje się
  zamontowanie szaf zamkniętych zapewniających lepszą izolację przed zanieczyszcz
 eniami.
  Zaplanowano zakup 14 szaf 32U duplex BKT.
@@ -2036,7 +2036,7 @@ Okablowanie poziome zostanie poprowadzone natynkowo w niepalnych korytkach
  kablowych PCV.
  W korytkach zostaną zamontowane gniazda przy każdym stanowisku roboczym.
  Poprowadzenie okablowania w korytkach pozwoli na łatwiejsze dokonywanie
- potnecjalnych napraw i/lub modyfikacji w już zainstalowanym okablowaniu.
+ potencjalnych napraw i/lub modyfikacji w już zainstalowanym okablowaniu.
  
 \end_layout
 
@@ -2045,7 +2045,7 @@ Panele krosowe
 \end_layout
 
 \begin_layout Standard
-W lokalnych punktach dystrybucyjnych wymagane jest zamonotwanie odpowiedniej
+W lokalnych punktach dystrybucyjnych wymagane jest zamontowanie odpowiedniej
  liczby paneli krosowych oraz paneli z wieszakami na każde przypadające
  48 portów w panelach krosowych.
  
@@ -2073,7 +2073,7 @@ Do instalacji został wybrany panel krosowy MOLEX PID-00141-EU oraz PID-00142-EU
 \begin_layout Standard
 W każdej szafie zostaną zainstalowane 2 panele PID-00142-EU (48 styków)
  oraz 2 organizatory do kabli.
- Panele zajmą w szafie 4U miejsca, oragnizatory 2U.
+ Panele zajmą w szafie 4U miejsca, organizatory 2U.
  
 \end_layout
 
@@ -2084,7 +2084,7 @@ W MDF wystarczy 1 panel krosowy 24 portowy oraz 1 organizator kabli.
 
 \begin_layout Standard
 W IDF oraz MDF wymagane są panele krosowe dla okablowania światłowodowego.
- Wybrany został panel Molex Premise Networks FMS III z 12 portami duplexowymi
+ Wybrany został panel Molex Promise Networks FMS III z 12 portami duplexowymi
  SC.
  Panel zajmuje 1U miejsca w szafie.
 \end_layout
@@ -2192,14 +2192,14 @@ Switch zajmuje 1U miejsca w szafie rakowej.
 \begin_layout Standard
 W głównym punkcie dystrybucyjnym zostanie zainstalowany switch 3Com Switch
  4800G (3CRS48G-24-91), który daje możliwość podłączenia światłowodów obsługując
-uch każde z pięter w budynku oraz światłowodów łączących budynku B1, B2,
+ych każde z pięter w budynku oraz światłowodów łączących budynku B1, B2,
  B3 między sobą.
 \end_layout
 
 \begin_layout Standard
 W switchu zostaną zainstalowany moduły Cisco XFP-10G-LR XFP  zapewniające
- transmisję z IDF oraz 2 moduły zapewniające łącznośc na poziomie 10Gbit
- pomiędzy budnynkami.
+ transmisję z IDF oraz 2 moduły zapewniające łączność na poziomie 10Gbit
+ pomiędzy budynkami.
 \end_layout
 
 \begin_layout Subsection
@@ -2209,7 +2209,7 @@ Routery
 \begin_layout Standard
 W każdym MDF zostanie zainstalowany router CISCO 7206VXR.
  Jest to wydajny router wspierający wybrane przez nas technologie.
- Wspiera wybrane monitorowanie i zarządzanie z wykorzystnaniem protokołu
+ Wspiera wybrane monitorowanie i zarządzanie z wykorzystaniem protokołu
  SNMP oraz wybrany protokół routingu OSPF.
  Router jest w obudowie wspierającej montaż w szafie rakowej -- zajmuje
  3U miejsca w szafie.
@@ -3821,7 +3821,7 @@ Testowanie okablowania pionowego
 
 \begin_layout Standard
 Na okablowaniu pionowym (światłowód) zostanie przeprowadzony pomiar reflektometr
-zyczny mający stwierdzić brak powstałych podczas instalacji uszkodzeń oraz
+yczny mający stwierdzić brak powstałych podczas instalacji uszkodzeń oraz
  poprawne ułożenie okablowania.
 \end_layout
 
