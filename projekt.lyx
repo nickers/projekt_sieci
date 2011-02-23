@@ -549,11 +549,12 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename plany_budynku/plan_budynku-p1.pdf
+	lyxscale 30
 	width 100text%
 	height 100theight%
-	keepAspectRatio
 	rotateAngle 90
 
 \end_inset
@@ -582,14 +583,15 @@ Plan parteru
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename plany_budynku/plan_budynku-p2.pdf
+	lyxscale 30
 	width 100text%
 	height 100theight%
-	keepAspectRatio
 	rotateAngle 90
 
 \end_inset
@@ -764,6 +766,44 @@ serwerów zostanie postawiony serwer WWW w
 celu hostowania strony firmowej.
  Strona będzie dostępna przez wszystkie zewnętrzne adresy IP --- port 80
  będzie przekierowany na serwer hostujący.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plany_budynku/plan_budynku-schemat_sieci.pdf
+	lyxscale 30
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Projekt logiczny sieci w budynku
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2278,6 +2318,41 @@ Projekt okablowania strukturalnego
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plany_budynku/plan_budynku-p3.pdf
+	lyxscale 30
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+	rotateAngle 90
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Projekt logiczny sieci w budynku
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -2306,7 +2381,7 @@ IDF-------------------SR-------------SR
 \end_layout
 
 \begin_layout Plain Layout
-MDF
+MDF - IDF - SR -SR
 \end_layout
 
 \begin_layout Plain Layout
