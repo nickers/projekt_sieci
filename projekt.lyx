@@ -1818,8 +1818,19 @@ Plan zarządzania siecią
 \end_layout
 
 \begin_layout Standard
-Zarządzanie siecią planuje się oprzeć na protokole SNMP.
- 
+W celu monitorowania sprzętu aktywnego zostanie użyte oprogramowanie PRTG
+ Network Monitor --- głównie używając protokołu SNMP.
+ Szybkie fizyczne lokalizowanie awarii sprzętu ułatwii zastosowana metodologia
+ nadawania adresów IP dla urządzeń --- adres wskazuje fizyczne położenie
+ każdego urządzenia.
+ Dodatkowo do każdego urządzenia na stałe będzie przypisany 1 adres IP z
+\begin_inset space ~
+\end_inset
+
+puli danego piętra --- zostanie on przypisany do adresu MAC urząrzenia.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
